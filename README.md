@@ -2,8 +2,8 @@
 
 ## Tech Stack
 
-1. FE - next js
-2. main microservice - golang
-3. movie microservice - js
-4. cinema hall microservice - python
-5. ticket microservice - golang
+- FE - next js
+- main microservice - golang
+- movie microservice - js
+- cinema hall microservice - python
+- ticket microservice - golang
