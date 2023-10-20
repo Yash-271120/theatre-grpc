@@ -1,0 +1,31 @@
+syntax="proto3";
+
+package proto;
+
+message Movie {
+    int32 id = 1;
+    string title = 2;
+} 
+
+
+message GetMoviesRequest {
+  string id = 1;
+}
+
+message GetMoviesResponse {
+  repeated Movie movies = 1;
+}
+
+message CreateMovieRequest {
+  string title = 1;
+}
+
+message CreateMovieResponse {
+  Movie movie = 1;
+}
+
+
+service MovieService {
+  rpc GetMovies(GetMoviesRequest) returns (GetMoviesResponse);
+  rpc CreateMovie(CreateMovieRequest) returns (CreateMovieResponse);
+}
