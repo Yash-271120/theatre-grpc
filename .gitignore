@@ -1,2 +1,5 @@
 # main service
 /backend/server/.env
+
+# movie service
+/backend/services/movie/.env
