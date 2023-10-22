@@ -4,3 +4,4 @@ backend/server/proto/
 
 # movie service
 /backend/services/movie/.env
+/backend/services/movie/node_modules
