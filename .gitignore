@@ -1,5 +1,6 @@
 # main service
 /backend/server/.env
+backend/server/proto/
 
 # movie service
 /backend/services/movie/.env
