@@ -1,15 +1,14 @@
 syntax="proto3";
 
 package proto;
+option go_package = "./proto";
 
 message Movie {
     int32 id = 1;
     string title = 2;
 } 
 
-
 message GetMoviesRequest {
-  string id = 1;
 }
 
 message GetMoviesResponse {
