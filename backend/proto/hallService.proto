@@ -1,0 +1,46 @@
+syntax="proto3";
+
+package proto;
+option go_package = "./proto";
+import "proto/movieService.proto";
+
+message Hall {
+    int32 id = 1;
+    Movie movie = 2;
+    int32 capacity = 3;
+    int32 available = 4;
+}
+
+message CreateHallRequest {
+    Movie movie = 1;
+    int32 capacity = 2;
+    int32 available = 3;
+}
+
+message CreateHallResponse {
+    Hall hall = 1;
+}
+
+message GetHallRequest {
+    int32 id = 1;
+}
+
+message GetHallResponse {
+    Hall hall = 1;
+}
+
+message UpdateHallAvailableRequest {
+    int32 id = 1;
+    int32 available = 2;
+}
+
+message UpdateHallAvailableResponse {
+    Hall hall = 1;
+}
+
+service HallService {
+    rpc CreateHall(CreateHallRequest) returns (CreateHallResponse);
+    rpc GetHall(GetHallRequest) returns (GetHallResponse);
+    rpc UpdateHallAvailable(UpdateHallAvailableRequest) returns (UpdateHallAvailableResponse);
+}
+
