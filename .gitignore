@@ -5,3 +5,9 @@ backend/server/proto/
 # movie service
 /backend/services/movie/.env
 /backend/services/movie/node_modules
+
+# hall service
+/backend/services/hall/.env
+/backend/services/hall/env
+/backend/services/hall/proto
+*__pycache__
