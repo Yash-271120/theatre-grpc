@@ -2,7 +2,7 @@ syntax="proto3";
 
 package proto;
 option go_package = "./proto";
-import "proto/movieService.proto";
+import "movieService.proto";
 
 message Hall {
     int32 id = 1;
