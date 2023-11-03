@@ -1,6 +1,5 @@
 # main service
 /backend/server/.env
-backend/server/proto/
 
 # movie service
 /backend/services/movie/.env
@@ -9,5 +8,7 @@ backend/server/proto/
 # hall service
 /backend/services/hall/.env
 /backend/services/hall/env
-/backend/services/hall/proto
 *__pycache__
+
+# ticket service
+/backend/services/ticket/.env
